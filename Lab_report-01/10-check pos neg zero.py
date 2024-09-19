@@ -1,4 +1,3 @@
-# Input from the user
 num = float(input("Enter a number: "))
 
 # Check if the number is positive, negative, or zero
