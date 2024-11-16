@@ -23,8 +23,8 @@ class ContractEmployee(Employee):
         return self.hourly_rate * self.hours_worked
 
 # Test Data
-permanent_emp = PermanentEmployee("Alice", 1, 3000)
-contract_emp = ContractEmployee("Bob", 2, 50, 160)
+permanent_emp = PermanentEmployee("RADUAN", 1839, 50000)
+contract_emp = ContractEmployee("AHAMED", 1830, 150, 160)
 
 # Demonstration
 
