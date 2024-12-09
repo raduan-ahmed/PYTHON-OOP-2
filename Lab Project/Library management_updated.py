@@ -101,11 +101,28 @@ class UserAuth:
 
     def sign_in(self, username, password):
         if username in self.users and self.users[username] == self.hash_password(password):
-            print("Sign-in successful. Welcome from (Raduan,Riddi,Somoy,Sajib) to you!")
+            print("Sign-in successful. Welcome!")
             return True
         else:
             print("Invalid username or password.")
             return False
+
+# Contact Us Function
+def contact_us():
+    print("\n**** Contact Us ****")
+    print("---------------------")
+    print("For any issues or queries, please contact:")
+    print(" ")
+    contacts = [
+        {"Name": "Md. Raduan Ahamed", "Designation": "Manager", "Phone": "01785566224", "Email": "raduan@1234.com"},
+        {"Name": "Rawnok Jahan Riddi", "Designation": "Assistant Manager", "Phone": "01785522441", "Email": "riddi@1234.com"},
+        {"Name": "Wahid Tawsif Somoy", "Designation": "Librarian", "Phone": "01785566332", "Email": "somoy@1234.com"},
+        {"Name": "Sajib Hossain", "Designation": "Assistant Librarian", "Phone": "01789988554", "Email": "sajib@1234.com"},
+    ]
+    for contact in contacts:
+        print(f"{contact['Name']} - {contact['Designation']}")
+        print(f"Phone: {contact['Phone']}")
+        print(f"Email: {contact['Email']}\n")
 
 # Main Function
 def main():
@@ -115,7 +132,8 @@ def main():
     logged_in = False
 
     while True:
-        print("\n--- Library Management System ---")
+        print("\n**** WELCOME TO OUR LIBRARY MANAGEMENT SYSTEM ****")
+        print("---------------------------------------------------")
         print("1. Sign Up")
         print("2. Sign In")
         print("3. Add a Book (requires sign-in)")
@@ -125,8 +143,9 @@ def main():
         print("7. Search for a Book")
         print("8. Sort Books by Title (requires sign-in)")
         print("9. Display All Books")
-        print("10. Exit")
-
+        print("10. Contact Us")
+        print("11. Exit")
+        print("---------------------------------------------------")
         choice = input("Enter your choice: ")
 
         try:
@@ -218,6 +237,10 @@ def main():
                     print("No books available in the library.")
 
             elif choice == "10":
+                # Contact Us
+                contact_us()
+
+            elif choice == "11":
                 # Exit
                 print("Exiting the Library Management System. Goodbye!")
                 break
