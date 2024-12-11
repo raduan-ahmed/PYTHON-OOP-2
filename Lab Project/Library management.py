@@ -88,7 +88,7 @@ class Library:
 def main():
     library = Library()
     while True:
-        print("\n--- Library Management System ---")
+        print("\n--- LIBRARY MANAGEMENT SYSTEM ---")
         print("1. Add a Book")
         print("2. Add a Member")
         print("3. Borrow a Book")
