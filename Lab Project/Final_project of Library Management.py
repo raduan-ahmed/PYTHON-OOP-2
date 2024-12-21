@@ -167,8 +167,8 @@ def main():
     # Add default books and members
     library.add_book(Book("1984", "George Orwell", 1949, 9.99, 5))
     library.add_book(Book("To Kill a Mockingbird", "Harper Lee", 1960, 7.99, 3))
-    library.add_member(Member("Alice", "M001"))
-    library.add_member(Member("Bob", "M002"))
+    library.add_member(Member("raduan", "M001"))
+    library.add_member(Member("ahamed", "M002"))
 
     logged_in = False
 
